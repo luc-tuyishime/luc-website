@@ -983,13 +983,18 @@
                         </div>
                     </div>
                     <!-- Section Content -->
-                    <form class="contact-form form-text"
-                    data-message-error="Opps... Something went wrong - please try again later"
-                    data-message-success="Thanks! You will recieve a responsve in 24h!" data-validate>
-                        <div class="form-group">Hello! My name is <input name="name" type="text" class="form-control-text" required> and here is my message:</div>
-                        <div class="form-group"><textarea name="message" cols="30" rows="4" class="form-control-text" required></textarea></div>
-                        <div class="form-group">I will left you my e-mail - please reply: <input name="email" type="email" class="form-control-text" required></div>
-                        <button class="btn btn-white btn-lg">Send message!</button>
+                   <!--  <form method="POST" action="http://formspree.io/luctunechi45@gmail.com" class="contact-form form-text">
+                        <input type="email" name="email"  class="form-control-text">
+                        <textarea name="message" cols="30" rows="4" class="form-control-text"></textarea>
+                     
+                        <button type="submit" class="btn btn-white btn-lg">Send message!</button>
+                    </form> -->
+
+                    <form method="POST" action="http://formspree.io/luctunechi45@gmail.com">
+                        <input type="name" name="text" placeholder="Your name" class="form-control-text"><br>
+                      <input type="email" name="email" placeholder="Your email" class="form-control-text"><br>
+                      <textarea name="message" placeholder="Your message" class="form-control-text"></textarea>
+                      <button type="submit" class="btn btn-white btn-lg">Send</button>
                     </form>
                 </div>
             </div>
@@ -998,7 +1003,7 @@
 </div>
 
 <!-- Window Toggle - Message -->
-<!-- <button class="window-toggle" data-target="#message-window"><i class="fa fa-comments"></i><i class="fa fa-times"></i></button> -->
+ <button class="window-toggle" data-toggle="tooltip" data-placement="bottom" title="feel free to message me!" data-target="#message-window"><i class="fa fa-comments"></i><i class="fa fa-times"></i></button> 
 
 <!-- Modal / Video -->
 <div class="modal modal-video fade" id="modalVideo" role="dialog">
